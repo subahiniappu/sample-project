@@ -1,7 +1,7 @@
-function studentController($scope,$https:) {
-   var url = "data1.txt";
+ function studentController($scope,$http) {
+            var url = "/data.txt";
 
-   $https:.get(url).success( function(response) {
-      $scope.students = response; 
-   });
-}
+            $http.get(url).then( function(response) {
+               $scope.students = response.data;
+            });
+         }
