@@ -1,4 +1,4 @@
-function studentController($scope,$https:) {
+function studentController($scope,$https) {
    var url = "data1.txt";
 
    $https:.get(url).success( function(response) {
