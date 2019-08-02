@@ -1,4 +1,4 @@
- function studentController($scope,$http) {
+ function controller($scope,$http) {
             var url = "/data1.txt";
 
             $http.get(url).then( function(response) {
